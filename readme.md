@@ -1,55 +1,56 @@
-# File Search + Code Interpreter + Function Calling Assistant
+# 🚀 AI Assistant API - OpenAI Assistant with File Search & Function Calling
 
-This project is a Node.js-based AI assistant that integrates **File Search**, **Code Interpreter**, and **Function Calling** using OpenAI's Assistants API. It allows users to:
+An intelligent AI assistant using OpenAI's Assistant API, supporting **file search, function calling, and dynamic responses**.
 
-1. **Search information in files** (PDF, text, etc.).
-2. **Run Python code** for calculations and data processing.
-3. **Call custom functions** to perform specific tasks (e.g., fetch weather data).
+## 🌟 Features
 
----
+- 🤖 **AI-powered assistant** with OpenAI API
+- 📂 **File upload & retrieval** for better context understanding
+- ⚡ **Function calling support** (e.g., real-time weather updates)
+- 📝 **Thread-based conversation handling**
 
-## Features
+## 🛠️ Tech Stack
 
-- **File Search**: Extract information from uploaded files.
-- **Code Interpreter**: Run Python code and perform calculations.
-- **Function Calling**: Integrate custom functions (e.g., fetch weather data).
-- **Modular Code**: Organized into separate files for easy maintenance.
+- **Node.js + Express.js**
+- **OpenAI Assistant API**
+- **File handling with fs module**
+- **Dotenv for environment variables**
 
----
+## 🔥 Future Enhancements
 
-## Prerequisites
+- 🔗 **Real-time function calling** (e.g., APIs for live data)
+- 💾 **Database integration** for chat history
+- 🎤 **Voice input support** for seamless interaction
 
-Before running the project, ensure you have the following installed:
+## 📂 Project Structure
 
-1. **Node.js** (v18 or higher)
-2. **npm** (Node Package Manager)
-3. **OpenAI API Key** (Get it from [OpenAI](https://platform.openai.com/))
+/file-search-code-interpreter-function-calling
+│── /src
+│ │── assistant.js # Assistant create/update logic
+│ │── upload.js # File upload logic
+│ │── ask.js # User queries handle 
+│ │── functions.js # Custom functions for Function Calling
+│ │── index.js # Main server file
+│── .env # API keys
+│── package.json # Dependencies
+│── README.md # Documentation
 
----
 
-## Setup Instructions
+## 🚀 Installation & Usage  
 
-### 1. Clone the Repository
+### 1️⃣ Clone the Repository  
+```sh
+git clone <https://github.com/abhishekKumar253/openai-assistant-api>
+cd <openai-assistant-api>
 
-```bash
-git clone https://github.com/abhishekKumar253
-
-```
-
-### 2. Install Dependencies
-
-```bash
+2️⃣ Install Dependencies
 npm install
-```
 
-### 3. Set up Environment Variables
-
-OPENAI_API_KEY=your_openai_api_key_here
-
-### 4. Run the Project
-
-```bash
+3️⃣ Start the Server
 npm run dev
-```
 
+3️⃣ Set Up Environment Variables (.env)
+
+OPENAI_API_KEY=your_openai_api_key  
+PORT=5000  
 
