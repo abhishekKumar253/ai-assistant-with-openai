@@ -1,28 +1,29 @@
-# 🚀 AI Assistant API - OpenAI Assistant with File Search & Function Calling
+# 🚀 AI Assistant API - OpenAI Assistant with File Search, Code Interpreter & Function Calling  
 
-An intelligent AI assistant using OpenAI's Assistant API, supporting **file search, function calling, and dynamic responses**.
+An intelligent AI assistant using OpenAI's Assistant API, supporting **file search, code execution, function calling, and dynamic responses**.  
 
-## 🌟 Features
+## 🌟 Features  
 
-- 🤖 **AI-powered assistant** with OpenAI API
-- 📂 **File upload & retrieval** for better context understanding
-- ⚡ **Function calling support** (e.g., real-time weather updates)
-- 📝 **Thread-based conversation handling**
+- 🤖 **AI-powered assistant** with OpenAI API  
+- 📂 **File upload & retrieval** for better context understanding  
+- 📝 **Thread-based conversation handling**  
+- ⚡ **Function Calling** (e.g., real-time weather updates)  
+- 🖥️ **Code Interpreter** (Executes Python code inside OpenAI)  
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack  
 
-- **Node.js + Express.js**
-- **OpenAI Assistant API**
-- **File handling with fs module**
-- **Dotenv for environment variables**
+- **Node.js + Express.js**  
+- **OpenAI Assistant API**  
+- **File handling with fs module**  
+- **Dotenv for environment variables**  
 
-## 🔥 Future Enhancements
+## 🔥 Future Enhancements  
 
-- 🔗 **Real-time function calling** (e.g., APIs for live data)
-- 💾 **Database integration** for chat history
-- 🎤 **Voice input support** for seamless interaction
+- 🔗 **Real-time function calling** (e.g., APIs for live data)  
+- 💾 **Database integration** for chat history  
+- 🎤 **Voice input support** for seamless interaction  
 
-## 📂 Project Structure
+## 📂 Project Structure  
 
 /file-search-code-interpreter-function-calling
 │── /src
