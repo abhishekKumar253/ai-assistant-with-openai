@@ -57,7 +57,6 @@ export async function askQuestion(message, assistantId) {
             }
           );
 
-        // Tool outputs submit karein
         await openai.beta.threads.runs.submitToolOutputs(thread.id, run.id, {
           tool_outputs: toolOutputs,
         });
@@ -67,7 +66,6 @@ export async function askQuestion(message, assistantId) {
       runStatus = await openai.beta.threads.runs.retrieve(thread.id, run.id);
     }
 
-    // Messages retrieve
     const messages = await openai.beta.threads.messages.list(thread.id);
     const response = messages.data[0].content[0].text.value;
 
