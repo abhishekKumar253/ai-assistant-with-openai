@@ -20,7 +20,6 @@ app.post("/upload", async (req, res) => {
     await updateAssistant(assistantId, [fileIds]);
     res.json({ message: "File uploaded and attached to assistant", fileIds });
   } catch (error) {
-    console.error("Error:", error);
     res.status(500).json({ error: "Failed to upload file" });
   }
 });
@@ -31,10 +30,8 @@ app.post("/ask", async (req, res) => {
 
   try {
     const response = await askQuestion(message, assistantId);
-    console.log("Assistant Response:", response);
     res.json({ response });
   } catch (error) {
-    console.error("Error in /ask endpoint:", error);
     res.status(500).json({ error: error.message });
   }
 });

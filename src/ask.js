@@ -33,12 +33,9 @@ export async function askQuestion(message, assistantId) {
       console.log("Checking Run Status:", runStatus.status);
 
       if (runStatus.status === "failed") {
-        console.error("❌ Assistant Run Failed! Full details below:");
-        console.error(JSON.stringify(runStatus, null, 2)); 
         throw new Error("Assistant run failed. Check the logs for details."); 
       }
       if (runStatus.status === "requires_action") {
-        console.log("Assistant requires action:", runStatus.required_action);
         const toolOutputs =
           runStatus.required_action.submit_tool_outputs.tool_calls.map(
             (toolCall) => {

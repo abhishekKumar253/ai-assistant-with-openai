@@ -18,11 +18,8 @@ export async function uploadFile(filePath) {
       purpose: "assistants",
     });
 
-    console.log("File uploaded with ID:", file.id);
-
     await updateAssistant(assistantId, [file.id]);
-
-    console.log("File successfully attached to Assistant.");
+    
     return file.id;
   } catch (error) {
     console.error("Upload Error:", error);
